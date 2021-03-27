@@ -18,7 +18,7 @@ def build_web_page
     photos = body.map{|x| x['url']}
     lista = ""
     photos.each do |photo|
-        lista += "<li><img scr=\"#{photo}\"></li>\n"
+        lista += "<li><img src=\"#{photo}\"></li>\n"
     end
 result = "<!DOCTYPE html>\n<html>\n<head>\n</head>\n<body>\n<ul>\n#{lista}</ul>\n</body>\n</html>"
 end
